@@ -6,3 +6,5 @@
 	editor = nvim
 [init]
 	defaultBranch = main
+[commit]
+	gpgSign = true
