@@ -25,6 +25,10 @@ function cr
     end
 end
 
+function dev
+    node ~/.scripts/dev.js | bash
+end
+
 fish_add_path $HOME/.cargo/bin
 fish_add_path $HOME/.local/bin
 

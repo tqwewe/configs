@@ -20,6 +20,15 @@ set clipboard=unnamedplus   " using system clipboard
 filetype plugin on
 set cursorline              " highlight current cursorline
 set ttyfast                 " Speed up scrolling in Vim
+set hidden                  " Required for operations modifying multiple buffers like rename
+
+let g:LanguageClient_serverCommands = {
+    \ 'rust': ['~/.cargo/bin/rustup', 'run', 'stable', 'rls'],
+    \ 'javascript': ['/usr/local/bin/javascript-typescript-stdio'],
+    \ 'javascript.jsx': ['tcp://127.0.0.1:2089'],
+    \ 'python': ['/usr/local/bin/pyls'],
+    \ 'ruby': ['~/.rbenv/shims/solargraph', 'stdio'],
+    \ }
 
 if &shell =~# 'fish$'
     set shell=sh
@@ -36,6 +45,8 @@ call plug#begin("~/.vim/plugged")
   Plug 'mhinz/vim-startify'
   Plug 'neoclide/coc.nvim', {'branch': 'release'}
   Plug 'khaveesh/vim-fish-syntax'
+  Plug 'autozimu/LanguageClient-neovim', { 'branch': 'next', 'do': 'bash install.sh', }
+  " Plug 'rust-lang/rust.vim'
 call plug#end()
 
 " color schemes
@@ -44,7 +55,7 @@ if (has("termguicolors"))
 endif
 
 syntax enable
-" colorscheme evening
+filetype plugin indent on
 colorscheme dracula
 
 " open new split panes to right and below

@@ -1,0 +1,9 @@
+theme = "dark_plus"
+
+[editor]
+line-number = "relative"
+true-color = true
+mouse = true
+
+[keys.normal]
+0 = "goto_line_start"

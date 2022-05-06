@@ -11,6 +11,10 @@
 !/.config/fish/
 !/.config/fish/config.fish
 
+# Helix
+!/.config/helix/
+!/.config/helix/*
+
 # NeoVim
 !/.config/nvim/
 !/.config/nvim/init.vim
