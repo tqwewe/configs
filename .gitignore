@@ -1,0 +1,15 @@
+*
+
+!.gitignore
+!/.config/
+
+# BashRC
+!/.bashrc
+
+# Fish
+!/.config/fish/
+!/.config/fish/config.fish
+
+# NeoVim
+!/.config/nvim/
+!/.config/nvim/init.vim
