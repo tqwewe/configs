@@ -1,0 +1,8 @@
+[user]
+	name = Ari Seyhun
+	email = ariseyhun@live.com.au
+	signingkey = A62A832FC65BB36A
+[core]
+	editor = nvim
+[init]
+	defaultBranch = main
