@@ -13,3 +13,7 @@
 # NeoVim
 !/.config/nvim/
 !/.config/nvim/init.vim
+
+# Gpg
+!/.gnupg/
+!/.gnupg/gpg-agent.conf
