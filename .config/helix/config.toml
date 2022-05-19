@@ -7,3 +7,7 @@ mouse = true
 
 [keys.normal]
 0 = "goto_line_start"
+"C-space" = "code_action"
+
+[keys.insert]
+"C-space" = "code_action"
